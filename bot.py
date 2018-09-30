@@ -18,7 +18,7 @@ def start_bot(bot, update):
 
 def chat(bot, update):
     text = update.message.text
-    logging.info(text)
+    logging.info("Пользователь {} ввёл текст '{}'".format(update.message.chat.username, text))
     update.message.reply_text(text)
 
 
